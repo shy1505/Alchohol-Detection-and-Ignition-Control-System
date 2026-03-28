@@ -1,0 +1,13 @@
+Connections were as:-
+MQ3 VCC → 5V
+MQ3 GND → GND
+MQ3 AOUT → GPIO 34
+
+Relay IN → GPIO 26
+Relay VCC → 5V
+Relay GND → GND
+
+Buzzer + → GPIO 27
+Buzzer - → GND
+
+Motor connected via Relay
