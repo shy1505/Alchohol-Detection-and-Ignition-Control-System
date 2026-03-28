@@ -1,10 +1,65 @@
 # Alchohol-Detection-and-Ignition-Control-System
-💖 Project Journey
+## 📌 Overview
 
-This project was my first hands-on experience with electronics, and honestly, it was both exciting and a little scary at the beginning. I worked together with a team of three, and we built an Alcohol Detection and Ignition Control System using ESP32.
+This project is an embedded system designed to prevent drunk driving by detecting alcohol presence and disabling vehicle ignition.
 
-At first, even simple things like wiring and sensor readings felt confusing. We made a lot of mistakes — wrong connections, code not working, sensors giving random values — but each time we debugged and fixed something, we learned a little more.
+It uses an MQ-3 alcohol sensor with ESP32 to monitor alcohol levels in the surrounding air. If alcohol is detected beyond a threshold, the system disables the ignition (motor OFF) and triggers an alert (buzzer).
 
-I personally spent a lot of time understanding how the MQ3 sensor behaves and how to control outputs using ESP32. Writing and correcting the program again and again helped me understand the logic much better.
+---
 
-Slowly, everything started making sense — and the moment our system successfully detected alcohol and turned off the motor with the buzzer alert, it felt really rewarding ✨
+## ⚙️ Components Used
+
+* ESP32 Microcontroller
+* MQ-3 Alcohol Sensor
+* Relay Module
+* DC Motor (Engine Simulation)
+* Buzzer
+* Power Supply
+
+---
+
+## 🧠 Working Principle
+
+1. MQ-3 sensor detects alcohol vapors in air
+2. ESP32 reads analog signal from MQ-3
+3. If value exceeds threshold:
+
+   * Relay turns OFF motor (engine stops)
+   * Buzzer starts beeping
+4. If no alcohol:
+
+   * Motor remains ON
+   * System runs normally
+
+## 💻 Code
+
+Code is available in the `/code` folder.
+
+
+## 📊 Output
+
+* Motor stops when alcohol is detected
+* Buzzer alerts the user
+* Real-time monitoring using ESP32
+
+---
+
+## 🚀 Future Improvements
+
+* Integration with GPS for tracking
+* GSM module for sending alerts
+* Mobile app monitoring
+* AI-based alcohol detection accuracy
+
+---
+
+## 🧑‍💻 Author
+
+Shyamali Kumari
+Diploma in Electronics Engineering (2021-24)
+
+---
+
+## ⭐ If you found this useful
+
+Give this repo a star ⭐
